@@ -1,10 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <!-- Maskable: fondo celeste al 30% — Android recorta si quiere -->
-  <rect width="512" height="512" fill="#5B8DEF" opacity="0.3"/>
+  <defs>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="50%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#E879F9"/>
+    </linearGradient>
+  </defs>
+  <!-- Maskable: fondo Aurora sólido llenando todo -->
+  <rect width="512" height="512" fill="url(#aurora)"/>
   <g transform="translate(128 128) scale(4)">
-    <rect x="14" y="6"  width="36" height="10" rx="5" fill="#FFA84B"/>
-    <rect x="8"  y="20" width="48" height="10" rx="5" fill="#5B8DEF"/>
-    <rect x="11" y="34" width="42" height="10" rx="5" fill="#5B8DEF" opacity="0.75"/>
-    <rect x="17" y="48" width="30" height="10" rx="5" fill="#5B8DEF" opacity="0.55"/>
+    <rect x="14" y="6"  width="36" height="10" rx="5" fill="#FFFFFF"/>
+    <rect x="8"  y="20" width="48" height="10" rx="5" fill="#FFFFFF" opacity="0.85"/>
+    <rect x="11" y="34" width="42" height="10" rx="5" fill="#FFFFFF" opacity="0.65"/>
+    <rect x="17" y="48" width="30" height="10" rx="5" fill="#FFFFFF" opacity="0.45"/>
   </g>
 </svg>
